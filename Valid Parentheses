@@ -7,9 +7,9 @@
 
 // Example 1:
 
-// Input: s = "()"
+// Input : s = "()"
 
-// Output: true
+// Output : true
 
 
 class Solution {
