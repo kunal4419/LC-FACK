@@ -8,6 +8,7 @@ Explanation: 121 reads as 121 from left to right and from right to left.
 Example 2:
 Input: x = -121
 Output: false
+Explanation: Less than zero gives false
 
 class Solution {
     public boolean isPalindrome(int x) {
