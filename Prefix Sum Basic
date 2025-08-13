@@ -1,0 +1,30 @@
+https://leetcode.com/problems/running-sum-of-1d-array/
+
+// Brute Force O(N*N)
+
+// class Solution {
+//     public int[] runningSum(int[] nums) {
+//         int pf[] = new int[nums.length];
+//         for(int i=0; i<nums.length; i++){
+//             int sum = 0;
+//             for(int j=0; j<=i; j++){
+//                 sum = sum + nums[j];
+//             }
+//             pf[i]=sum;
+//         }
+//         return pf;
+//     }
+// }
+
+
+// Optimal O(N) ans O(1)
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int pf[] = new int[nums.length];
+        pf[0]=nums[0];
+        for(int i=1; i<nums.length;i++){
+            pf[i]=pf[i-1]+nums[i];
+        }
+        return pf;
+    }
+}
